@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="POPPINS-MEDIUM.TTF">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListTitleView" customModule="ItemsListingDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="itemCount" destination="RkG-1n-kdr" id="PFY-hc-OTT"/>
+                <outlet property="title" destination="PDw-p4-hy7" id="LOD-aa-UFJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="uGZ-Oi-5rm">
+            <rect key="frame" x="0.0" y="0.0" width="423" height="212"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDw-p4-hy7" userLabel="Title">
+                    <rect key="frame" x="20" y="144" width="322" height="19"/>
+                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="0 Items" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RkG-1n-kdr" userLabel="Count">
+                    <rect key="frame" x="350" y="144" width="53" height="19"/>
+                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="wv2-IP-Pug"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="RkG-1n-kdr" firstAttribute="bottom" secondItem="PDw-p4-hy7" secondAttribute="bottom" id="BPs-e1-R2b"/>
+                <constraint firstItem="RkG-1n-kdr" firstAttribute="leading" secondItem="PDw-p4-hy7" secondAttribute="trailing" constant="8" id="Fxl-dW-d6y"/>
+                <constraint firstItem="PDw-p4-hy7" firstAttribute="leading" secondItem="wv2-IP-Pug" secondAttribute="leading" constant="20" id="NSe-OM-Ech"/>
+                <constraint firstItem="wv2-IP-Pug" firstAttribute="trailing" secondItem="RkG-1n-kdr" secondAttribute="trailing" constant="20" id="QP5-M1-Jaf"/>
+                <constraint firstItem="wv2-IP-Pug" firstAttribute="bottom" secondItem="PDw-p4-hy7" secondAttribute="bottom" constant="15" id="bG3-d9-Kp1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="22.463768115942031" y="412.5"/>
+        </view>
+    </objects>
+</document>
